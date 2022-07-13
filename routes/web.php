@@ -10,6 +10,13 @@ Route::get('home','HomeController@index')->name('home.index');
 
 Route::get('/api/v1/externa','Auth\AuthController@extena');
 
+Route::get('/api/productos','Api\ProductoController@index');
+
+Route::get('/api/productos/{id}','Api\ProductoController@show');
+
+Route::get('/telefonos','TelefonoController@index');
+Route::get('/telefonos_web','TelefonoController@indexWeb');
+
 
 // Route::get('posts','PostController@index')->name('posts.index');
 
